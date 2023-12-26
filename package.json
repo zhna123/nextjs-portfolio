@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "clsx": "^2.0.0",
     "gray-matter": "^4.0.3",
     "next": "14.0.3",
     "next-mdx-remote": "^4.4.1",

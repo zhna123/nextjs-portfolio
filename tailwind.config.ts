@@ -13,7 +13,7 @@ const config: Config = {
         }
       },
       animation: {
-        shimmer: 'shimmer 1s ease-out 3 forwards'
+        shimmer: 'shimmer 1s ease-in-out 1 forwards'
       },
       colors: {
         dusk_blue: {

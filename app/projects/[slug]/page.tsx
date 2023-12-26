@@ -10,7 +10,7 @@ export default function Page({ params }: { params: { slug: string } }) {
     notFound()
   }
   return (
-    <section>
+    <section className='mb-12'>
       <div className="h-1/4 w-full mb-10 bg-dusk_blue-600 relative flex flex-col items-center justify-center text-white">
         <nav className="px-24 py-6 text-white text-sm self-start">
           <Link href={'/'}>
@@ -21,8 +21,8 @@ export default function Page({ params }: { params: { slug: string } }) {
           <h1 className="text-center mb-4">{ project.metadata.title }</h1>
           <h3 className="font-thin text-center"> { project.metadata.summary } </h3>
         </header>
-        <ul className="flex gap-10 text-sm underline font-thin mb-6">
-          <li>Github</li>
+        <ul className="flex gap-10 text-sm font-thin mb-6">
+          <li className='underline'><a href={`https://github.com/zhna123/${params.slug}`} target='_blank' rel='noopener noreferrer'>Github</a></li>
           <li>Website</li>
         </ul>
       </div>

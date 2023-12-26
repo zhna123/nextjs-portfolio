@@ -1,17 +1,17 @@
+import clsx from 'clsx';
 import Image from 'next/image'
-import Link from 'next/link';
 
 const shimmer =
   'before:absolute before:inset-0 before:z-20 before:-translate-x-full before:bg-gradient-to-r before:from-transparent before:from-20% before:via-white/60 before:via-50% hover:before:animate-shimmer';
 
 export default function Card({
-  bgColor,
+  index,
   imgSrc,
   imgAlt,
   title,
   subTitle,
 } : {
-  bgColor: string,
+  index: number,
   imgSrc: string,
   imgAlt: string,
   title: string,
@@ -19,7 +19,11 @@ export default function Card({
 }) {
   return (
       <article className={`${shimmer} aspect-[6/5] relative overflow-hidden hover:cursor-pointer transition-all duration-500 hover:shadow-lg hover:shadow-gray-400`}>
-        <div className={ bgColor }>
+        <div className={clsx(
+          {
+          'bg-dusk_blue-300': index%2 == 0,
+          'bg-dusk_blue-500': index%2 != 0,
+          })}>
           <Image
             src={ imgSrc }
             width={1024}

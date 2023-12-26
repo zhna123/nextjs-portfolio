@@ -10,42 +10,52 @@ export default function Home() {
   return (
     <div className='flex flex-col min-h-screen px-24 py-6'>
       <header>
-        <ul className='flex justify-end gap-4 text-sm font-semibold text-dusk_blue-600'>
-          <li>Github</li>
-          <li>LinkedIn</li>
-          <li>Download CV</li>
+        <ul className='flex justify-end gap-4 text-xs font-semibold text-dusk_blue-600'>
+          <li>
+            <a target="_blank" href="https://github.com/zhna123" rel="noopener noreferrer">
+              <div className="flex gap-1 items-center">
+                <span>Github</span>
+                <img className="inline-block" alt="open new tab icon" src="/open_in_new.svg" width="15" height="15" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/na-zhao-956b7329/" rel="noopener noreferrer">
+              <div className="flex gap-1 items-center">
+                <span>LinkedIn</span>
+                <img className="inline-block" alt="open new tab icon" src="/open_in_new.svg" width="15" height="15" />
+              </div>
+            </a>
+          </li>
+          <li>
+            <div className="flex gap-1 items-center">
+              <span>Download CV</span>
+              <img className="inline-block" alt="download icon" src="/download.svg" width="20" height="20" />
+            </div>
+          </li>
         </ul>
         <div className='sm:px-12 pt-24 pb-12 flex flex-col gap-4 sm:flex-row sm:justify-between text-dusk_blue-600'>
           <div>
             <h1 className='mb-2'>Hello,</h1>
             <h1 className='font-bold'>I am Na Zhao.</h1>
           </div>
-          <p className='sm:w-1/2 text-sm'>I am an independent developer.
-            I enjoy web development and working with new technologies.
-            You can find a collection of my projects below.
+          <p className='sm:w-1/2 text-sm'>I am an independent web developer.
+            I enjoy making web apps. You can find a collection of my recent personal projects below.
           </p>
         </div>
       </header>
       <main className='grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
         {
-          allProjects.map(project => (
+          allProjects.map((project, index) => (
             <Link 
               key={ project.slug }
               href={`projects/${project.slug}`}
             >
-              <Card bgColor="bg-dusk_blue-300" imgSrc={ project.metadata.image } imgAlt={ project.metadata.title }
+              <Card index={index} imgSrc={ project.metadata.image } imgAlt={ project.metadata.title }
                 title={ project.metadata.title } subTitle={ project.metadata.subTitle }/>
             </Link>
           ))
         }
-        {/* <Card bgColor="bg-dusk_blue-300" imgSrc="/projects/orbittalk_1.png" imgAlt="Screenshots of Orbittalk app"
-              title="Orbit Talk" subTitle="A web chat app"/>
-
-        <Card bgColor="bg-dusk_blue-400" imgSrc="/projects/journal_1.png" imgAlt="Screenshots of A Developer's Journal app"
-              title="A Developer's Journal" subTitle="A personal blog"/>
-
-        <Card bgColor="bg-dusk_blue-300" imgSrc="/projects/waldo_1.png" imgAlt="Screenshots of Where's Waldo"
-              title="Where's Waldo" subTitle="An online characters finding game"/> */}
       </main>
       {/* <footer className='mt-auto'>footer</footer> */}
     </div>
