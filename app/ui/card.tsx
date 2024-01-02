@@ -18,11 +18,11 @@ export default function Card({
   subTitle: string,
 }) {
   return (
-      <article className={`${shimmer} aspect-[6/5] relative overflow-hidden hover:cursor-pointer transition-all duration-500 hover:shadow-lg hover:shadow-gray-400`}>
+      <article className={`${shimmer} mb-4 aspect-[6/5] relative overflow-hidden hover:cursor-pointer transition-all duration-500 hover:shadow-lg hover:shadow-gray-400`}>
         <div className={clsx(
           {
-          'bg-dusk_blue-300': index%2 == 0,
-          'bg-dusk_blue-500': index%2 != 0,
+          'bg-dusk_blue-200': index%2 == 0,
+          'bg-dusk_blue-400': index%2 != 0,
           })}>
           <Image
             src={ imgSrc }
@@ -33,8 +33,8 @@ export default function Card({
         </div>
         <div className='flex items-center absolute left-0 bottom-0 z-10 right-0 h-14 w-full bg-dusk_blue-600 text-white'>
           <div className='px-2'>
-            <p className='font-semibold'>{ title }</p>
-            <p className='text-xs'>{ subTitle }</p>
+            <p className='text-sm font-semibold'>{ title }</p>
+            <p className='text-xs font-light'>{ subTitle }</p>
           </div>
         </div>
       </article>

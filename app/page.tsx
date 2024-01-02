@@ -44,7 +44,7 @@ export default function Home() {
           </p>
         </div>
       </header>
-      <main className='grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
+      <main className='grid md:grid-cols-2 lg:grid-cols-3 gap-2'>
         {
           allProjects.map((project, index) => (
             <Link 

@@ -17,6 +17,7 @@ const config: Config = {
       },
       colors: {
         dusk_blue: {
+          200: '#EAEDF0',
           300: '#DDE6ED',
           400: '#9DB2BF',
           500: '#526D82',
