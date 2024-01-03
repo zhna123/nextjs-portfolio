@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getProjects } from "./utils/mdxUtils";
 import Card from "./ui/card";
+import Image from 'next/image'
 
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
             <a target="_blank" href="https://github.com/zhna123" rel="noopener noreferrer">
               <div className="flex gap-1 items-center">
                 <span>Github</span>
-                <img className="inline-block" alt="open new tab icon" src="/open_in_new.svg" width="15" height="15" />
+                <Image className="inline-block" alt="open new tab icon" src="/open_in_new.svg" width="15" height="15" />
               </div>
             </a>
           </li>
@@ -23,15 +24,17 @@ export default function Home() {
             <a target="_blank" href="https://www.linkedin.com/in/na-zhao-956b7329/" rel="noopener noreferrer">
               <div className="flex gap-1 items-center">
                 <span>LinkedIn</span>
-                <img className="inline-block" alt="open new tab icon" src="/open_in_new.svg" width="15" height="15" />
+                <Image className="inline-block" alt="open new tab icon" src="/open_in_new.svg" width="15" height="15" />
               </div>
             </a>
           </li>
           <li>
-            <div className="flex gap-1 items-center">
-              <span>Download CV</span>
-              <img className="inline-block" alt="download icon" src="/download.svg" width="20" height="20" />
-            </div>
+            <a target="_blank" href="/data/resume.pdf" rel="noopener noreferrer">
+              <div className="flex gap-1 items-center">
+                <span>Download CV</span>
+                <Image className="inline-block" alt="download icon" src="/download.svg" width="20" height="20" />
+              </div>
+            </a>
           </li>
         </ul>
         <div className='sm:px-12 pt-24 pb-12 flex flex-col gap-4 sm:flex-row sm:justify-between text-dusk_blue-600'>
