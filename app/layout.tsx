@@ -6,6 +6,7 @@ import { montserrat, playfair_display } from '@/app/ui/fonts'
 export const metadata: Metadata = {
   title: 'Na Zhao Portfolio',
   description: 'Na Zhao Portfolio Built Using Next.js',
+  metadataBase: new URL('https://nextjs-portfolio-zhna123.vercel.app/'),
 }
 
 export default function RootLayout({
