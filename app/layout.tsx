@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import '@/app/ui/globals.css'
-import { inter } from '@/app/ui/fonts'
+import { montserrat, playfair_display } from '@/app/ui/fonts'
 
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${montserrat.variable} ${playfair_display.variable}`}>{children}</body>
     </html>
   )
 }

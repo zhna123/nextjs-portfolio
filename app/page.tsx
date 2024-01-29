@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className='flex flex-col min-h-screen px-24 py-6'>
       <header>
-        <ul className='flex justify-end gap-4 text-xs font-semibold text-dusk_blue-600'>
+        <ul className='flex justify-end gap-4 text-xs font-sans font-bold text-port_blue'>
           <li>
             <a target="_blank" href="https://github.com/zhna123" rel="noopener noreferrer">
               <div className="flex gap-1 items-center">
@@ -29,7 +29,7 @@ export default function Home() {
             </a>
           </li>
           <li>
-            <a target="_blank" href="/data/resume.pdf" rel="noopener noreferrer">
+            <a target="_blank" href="/data/resume_Na_Zhao.pdf" rel="noopener noreferrer">
               <div className="flex gap-1 items-center">
                 <span>Download CV</span>
                 <Image className="inline-block" alt="download icon" src="/download.svg" width="20" height="20" />
@@ -37,17 +37,17 @@ export default function Home() {
             </a>
           </li>
         </ul>
-        <div className='sm:px-12 pt-24 pb-12 flex flex-col gap-4 sm:flex-row sm:justify-between text-dusk_blue-600'>
-          <div>
+        <div className='sm:px-12 pt-24 pb-12 flex flex-col gap-4 sm:flex-row sm:justify-between text-port_gray'>
+          <div className="font-serif">
             <h1 className='mb-2'>Hello,</h1>
             <h1 className='font-bold'>I am Na Zhao.</h1>
           </div>
-          <p className='sm:w-1/2 text-sm'>I am an independent web developer.
-            I enjoy making web apps. You can find a collection of my recent personal projects below.
+          <p className='font-sans font-medium sm:w-1/2 text-sm'>I am an independent web developer.
+            I enjoy working with websites and web apps. You can find a collection of my recent projects here.
           </p>
         </div>
       </header>
-      <main className='grid md:grid-cols-2 lg:grid-cols-3 gap-2'>
+      <main className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
         {
           allProjects.map((project, index) => (
             <Link 
@@ -60,7 +60,14 @@ export default function Home() {
           ))
         }
       </main>
-      {/* <footer className='mt-auto'>footer</footer> */}
+      <hr className="my-14" />
+      <footer className='mt-auto font-sans flex flex-col items-center'>
+        <small>This portfolio website is developed with Next.js(app router) and MDX</small>
+        <small className="text-port_blue underline mb-4">
+          <a target="_blank" href="https://github.com/zhna123/nextjs-portfolio" rel="noopener noreferrer">Click here to see source code &#x2197;</a>
+        </small>
+        <small className="">&copy; {new Date().getFullYear()} zhna123</small>
+      </footer>
     </div>
   )
 }

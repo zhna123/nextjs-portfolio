@@ -18,18 +18,18 @@ export default function Page({ params }: { params: { slug: string } }) {
     return "Website"
   }
   return (
-    <section className='mb-12'>
-      <div className="h-1/4 w-full mb-10 bg-dusk_blue-600 relative flex flex-col items-center justify-center text-white">
-        <nav className="px-24 py-6 text-white text-sm self-start">
+    <section className='mb-12 font-sans'>
+      <div className="h-1/4 w-full mb-10 bg-port_blue relative flex flex-col items-center justify-center text-port_white">
+        <nav className="px-24 py-6 font-semibold self-start">
           <Link href={'/'}>
-            { '<-- back' }
+            &#8592; Back
           </Link>
         </nav>
         <header className="w-1/3 mb-8">
           <h1 className="text-center mb-4">{ project.metadata.title }</h1>
-          <h3 className="font-thin text-center"> { project.metadata.summary } </h3>
+          <div className="font-extralight text-center"> { project.metadata.summary } </div>
         </header>
-        <ul className="flex gap-10 text-sm font-thin mb-6">
+        <ul className="flex gap-10 text-sm font-extralight mb-6">
           <li className='underline'><a href={`https://github.com/zhna123/${params.slug}`} target='_blank' rel='noopener noreferrer'>Github</a></li>
           <li className={clsx({
             'underline': urls[params.slug] !== undefined,

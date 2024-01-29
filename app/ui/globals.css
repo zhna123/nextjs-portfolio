@@ -2,11 +2,15 @@
 
 @layer base {
   h1 {
-    @apply text-2xl
+    @apply text-3xl
   }
 }
 
 @tailwind components;
 @tailwind utilities;
 
+
+body {
+  background-color: theme(colors.port_white);
+}
 
