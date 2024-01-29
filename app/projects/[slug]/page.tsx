@@ -13,7 +13,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   }
   const WebsiteComponent = () => {
     if (urls[params.slug] !== undefined) {
-      return <a href={urls[params.slug]} target='_blank' rel='noopener noreferrer'>Website</a>
+      return <a href={urls[params.slug]} target='_blank' rel='noopener noreferrer'>Website &#x2197;</a>
     } 
     return "Website"
   }
@@ -30,7 +30,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           <div className="font-extralight text-center"> { project.metadata.summary } </div>
         </header>
         <ul className="flex gap-10 text-sm font-extralight mb-6">
-          <li className='underline'><a href={`https://github.com/zhna123/${params.slug}`} target='_blank' rel='noopener noreferrer'>Github</a></li>
+          <li className='underline'><a href={`https://github.com/zhna123/${params.slug}`} target='_blank' rel='noopener noreferrer'>Github &#x2197;</a></li>
           <li className={clsx({
             'underline': urls[params.slug] !== undefined,
           })}>

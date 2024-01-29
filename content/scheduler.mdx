@@ -1,0 +1,38 @@
+---
+title: "Smart Home Schedule"
+subTitle: 'A smart home scheduling web app'
+summary: 'A smart home scheduling web app that enables automated control of smart devices via user-set schedules'
+image: '/projects/homeschedule.png'
+date: '2024-1-29'
+---
+
+<Image
+  alt={`home schedule screenshot`}
+  src={`/projects/scheduler/scheduler-home.png`}
+  width={2542 / 3}
+  height={1494 / 3}
+  priority
+/>
+
+This project incorporated new features from Next.js and react, including app router and server actions.
+
+After the user chooses a schedule to set, a form pops open for them to enter the time. 
+- The popup modal is implemented using search params to take advantage of server-side rendering.
+- The form submission is handled by server actions, which eliminates the need for creating API endpoints, and ensures data security.
+
+<Image
+  alt={`home schedule screenshot`}
+  src={`/projects/scheduler/set-schedule.png`}
+  width={2462 / 3}
+  height={1440 / 3}
+/>
+
+<Image
+  alt={`home schedule screenshot`}
+  src={`/projects/scheduler/scheduled.png`}
+  width={2476 / 3}
+  height={1460 / 3}
+/>
+
+- Device and scheduling data are written and configured using json file.
+- The project is written in Typescript, and styled with TailwindCSS.
