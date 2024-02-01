@@ -29,6 +29,14 @@ export default function Home() {
             </a>
           </li>
           <li>
+            <a target="_blank" href="https://nazhao.myportfolio.com/" rel="noopener noreferrer">
+              <div className="flex gap-1 items-center">
+                <span>UX Work</span>
+                <Image className="inline-block" alt="open new tab icon" src="/open_in_new.svg" width="15" height="15" />
+              </div>
+            </a>
+          </li>
+          <li>
             <a target="_blank" href="/data/resume_Na_Zhao.pdf" rel="noopener noreferrer">
               <div className="flex gap-1 items-center">
                 <span>Download CV</span>
