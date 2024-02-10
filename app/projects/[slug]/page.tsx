@@ -19,13 +19,13 @@ export default function Page({ params }: { params: { slug: string } }) {
   }
   return (
     <section className='mb-12 font-sans'>
-      <div className="h-1/4 w-full mb-10 bg-port_blue relative flex flex-col items-center justify-center text-port_white">
-        <nav className="px-24 py-6 font-semibold self-start">
+      <div className="h-1/4 mb-10 bg-port_blue relative flex flex-col items-center justify-center text-port_white">
+        <nav className="px-24 py-6 font-semibold self-center sm:self-start">
           <Link href={'/'}>
             &#8592; Back
           </Link>
         </nav>
-        <header className="w-1/3 mb-8">
+        <header className="px-6 sm:w-1/3 mb-8">
           <h1 className="text-center mb-4">{ project.metadata.title }</h1>
           <div className="font-extralight text-center"> { project.metadata.summary } </div>
         </header>
@@ -38,7 +38,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           </li>
         </ul>
       </div>
-      <div className="prose prose-slate prose-img:mx-auto mx-auto">
+      <div className="prose prose-slate prose-img:mx-auto mx-auto p-6">
         <CustomMDX source={project.content} />
       </div>
     </section>

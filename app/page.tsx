@@ -9,9 +9,9 @@ export default function Home() {
   let allProjects = getProjects();
 
   return (
-    <div className='flex flex-col min-h-screen px-24 py-6'>
+    <div className='flex flex-col min-h-screen px-6 sm:px-24 py-6'>
       <header>
-        <ul className='flex justify-end gap-4 text-xs font-sans font-bold text-port_blue'>
+        <ul className='flex justify-center flex-wrap gap-2 sm:justify-end sm:gap-4 text-xs font-sans font-bold text-port_blue'>
           <li>
             <a target="_blank" href="https://github.com/zhna123" rel="noopener noreferrer">
               <div className="flex gap-1 items-center">
@@ -70,7 +70,7 @@ export default function Home() {
       </main>
       <hr className="my-14" />
       <footer className='mt-auto font-sans flex flex-col items-center'>
-        <small>This portfolio website is developed with Next.js(app router) and MDX</small>
+        <small className="text-center">This portfolio website is developed with Next.js(app router) and MDX</small>
         <small className="text-port_blue underline mb-4">
           <a target="_blank" href="https://github.com/zhna123/nextjs-portfolio" rel="noopener noreferrer">Click here to see source code &#x2197;</a>
         </small>
