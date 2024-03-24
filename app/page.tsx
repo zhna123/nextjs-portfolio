@@ -37,12 +37,12 @@ export default function Home() {
             </a>
           </li>
           <li>
-            <a target="_blank" href="/data/resume_Na_Zhao.pdf" rel="noopener noreferrer">
+            {/* <a target="_blank" href="/data/resume_Na_Zhao.pdf" rel="noopener noreferrer"> */}
               <div className="flex gap-1 items-center">
                 <span>Download CV</span>
                 <Image className="inline-block" alt="download icon" src="/download.svg" width="20" height="20" />
               </div>
-            </a>
+            {/* </a> */}
           </li>
         </ul>
         <div className='sm:px-12 pt-24 pb-12 flex flex-col gap-4 sm:flex-row sm:justify-between text-port_gray'>
