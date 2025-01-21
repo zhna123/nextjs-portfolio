@@ -51,7 +51,7 @@ export default function Home() {
             <h1 className='font-bold'>I am Na Zhao.</h1>
           </div>
           <p className='font-sans font-medium sm:w-1/2 text-sm'>I am an independent web developer.
-            I enjoy working with websites and web apps. You can find a collection of my recent projects here.
+            You can find a collection of my projects here.
           </p>
         </div>
       </header>
@@ -70,7 +70,7 @@ export default function Home() {
       </main>
       <hr className="my-14" />
       <footer className='mt-auto font-sans flex flex-col items-center'>
-        <small className="text-center">This portfolio website is developed with Next.js(app router) and MDX</small>
+        <small className="text-center">This portfolio website is developed with Next.js and MDX</small>
         <small className="text-port_blue underline mb-4">
           <a target="_blank" href="https://github.com/zhna123/nextjs-portfolio" rel="noopener noreferrer">Click here to see source code &#x2197;</a>
         </small>
