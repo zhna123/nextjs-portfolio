@@ -6,19 +6,33 @@ image: '/projects/homeschedule.png'
 date: '2024-1-29'
 ---
 
+This project incorporates new features from Next.js and React, including the App Router and Server Actions. 
+It enables users to choose a schedule, enter the time through a pop-up form, and securely submit the data 
+without the need for separate API endpoints. The data is written and configured using a JSON file.
+
+## Key Features
+
+- Users can select a schedule and enter a time via a pop-up form.
+- Data is written and stored in a JSON file for easy configuration.
+- The popup modal is implemented using search params to leverage server-side rendering (SSR).
+- Server Actions handle form submission, ensuring secure data handling without the need for API endpoints.
+
+## Technologies Used
+
+- Next.js (App Router, Server Actions)
+- React
+- TypeScript
+- TailwindCSS
+- JSON for storing scheduling data
+
+## Screenshots
+
 <Image
   alt={`home schedule screenshot`}
   src={`/projects/scheduler/scheduler-home.png`}
   width={2542 / 3}
   height={1494 / 3}
-  priority
 />
-
-This project incorporated new features from Next.js and react, including app router and server actions.
-
-After the user chooses a schedule to set, a form pops open for them to enter the time. 
-- The popup modal is implemented using search params to take advantage of server-side rendering.
-- The form submission is handled by server actions, which eliminates the need for creating API endpoints, and ensures data security.
 
 <Image
   alt={`home schedule screenshot`}
@@ -33,6 +47,3 @@ After the user chooses a schedule to set, a form pops open for them to enter the
   width={2476 / 3}
   height={1460 / 3}
 />
-
-- Device and scheduling data are written and configured using json file.
-- The project is written in Typescript, and styled with TailwindCSS.
