@@ -50,7 +50,7 @@ export default function Home() {
             <h1 className='mb-2'>Hello,</h1>
             <h1 className='font-bold'>I am Na Zhao.</h1>
           </div>
-          <p className='font-sans font-medium sm:w-1/2 text-sm'>I am an independent web developer.
+          <p className='font-sans font-medium sm:w-1/2 text-sm'>I am an independent developer.
             You can find a collection of my projects here.
           </p>
         </div>
